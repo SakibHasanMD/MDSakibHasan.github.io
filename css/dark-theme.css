@@ -1,0 +1,175 @@
+/* Dark theme styles for Sakib's portfolio */
+:root {
+    --primary-color: #ff0000;  /* Red for active items */
+    --text-color: #ffffff;
+    --light-gray: #aaaaaa;
+    --dark-bg: #000000;
+    --header-height: 70px;
+    --section-spacing: 80px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--dark-bg);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: var(--dark-bg);
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 5px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  nav a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  /* Main content */
+  main {
+    margin-top: var(--header-height);
+    padding: 60px 30px;
+  }
+  
+  /* Profile section (homepage) */
+  .profile-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 60px;
+  }
+  
+  .profile-image-container {
+    flex: 0 0 300px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #333;
+  }
+  
+  .profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .greeting {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--light-gray);
+  }
+  
+  .name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--light-gray);
+    font-weight: 400;
+  }
+  
+  .bio-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-bg);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: var(--light-gray);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    header {
+      justify-content: center;
+    }
+    
+    .profile-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .profile-image-container {
+      flex: 0 0 auto;
+      width: 250px;
+      margin-bottom: 30px;
+    }
+    
+    .name {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Override any potential conflicts */
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+  }
