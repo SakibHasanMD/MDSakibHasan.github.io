@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">About</a>
       <a href="academics.html" class="active">Academics</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
@@ -24,15 +24,27 @@
       <div class="education-container">
         <div class="higher-education">
           <h2>Higher Education</h2>
-          <div id="college-info">
-            <!-- College information will be loaded here -->
-          </div>
+          <ul>
+            <li>B.Tech in Computer Science and Engineering</li>
+            <li>[University Name]</li>
+            <li>Graduation: [Month Year]</li>
+            <li>CGPA: X.XX/10.0</li>
+          </ul>
         </div>
         
-        <div class="school-education">
-          <h2>School</h2>
-          <div id="school-info">
-            <!-- School information will be loaded here -->
+        <div class="college-school-container">
+          <div class="college-education">
+            <h2>College</h2>
+            <div id="college-info">
+              <!-- College information will be loaded here -->
+            </div>
+          </div>
+          
+          <div class="school-education">
+            <h2>School</h2>
+            <div id="school-info">
+              <!-- School information will be loaded here -->
+            </div>
           </div>
         </div>
       </div>
@@ -57,10 +69,10 @@
         const collegeInfo = document.getElementById('college-info');
         collegeInfo.innerHTML = `
           <ul>
-            <li>B.Tech in Computer Science and Engineering</li>
             <li>${data.education.college.name}</li>
-            <li>Graduation: ${data.education.college.graduation_year}</li>
-            <li>CGPA: ${data.education.college.performance}</li>
+            <li>${data.education.college.board}</li>
+            <li>Graduation Year: ${data.education.college.graduation_year}</li>
+            <li>Academic Performance: ${data.education.college.performance}</li>
           </ul>
         `;
         

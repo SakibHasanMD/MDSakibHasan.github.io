@@ -183,26 +183,39 @@ footer {
 }
 
 .higher-education,
-.school-education {
+.college-school-container {
     background-color: #111;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
+.college-education,
+.school-education {
+    margin-bottom: 30px;
+}
+
+.college-education:last-child,
+.school-education:last-child {
+    margin-bottom: 0;
+}
+
 .higher-education ul,
+.college-education ul,
 .school-education ul {
     list-style-type: none;
     padding: 0;
 }
 
 .higher-education li,
+.college-education li,
 .school-education li {
     padding: 6px 0;
     border-bottom: 1px solid #333;
 }
 
 .higher-education li:last-child,
+.college-education li:last-child,
 .school-education li:last-child {
     border-bottom: none;
 }
@@ -261,7 +274,6 @@ footer {
     padding: 20px;
     font-size: 1.2rem;
 }
-
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
