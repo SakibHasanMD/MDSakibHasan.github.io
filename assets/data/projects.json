@@ -1,0 +1,26 @@
+[
+  {
+    "title": "E-commerce Website",
+    "description": "A fully responsive e-commerce website built with modern technologies and best practices.",
+    "image": "assets/images/ecommerce-project.jpg",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React"],
+    "demoUrl": "https://example.com/project1",
+    "repoUrl": "https://github.com/yourusername/ecommerce-project"
+  },
+  {
+    "title": "Weather App",
+    "description": "An interactive weather application that fetches real-time data from OpenWeatherMap API.",
+    "image": "assets/images/weather-app.jpg",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "API Integration"],
+    "demoUrl": "https://example.com/project2",
+    "repoUrl": "https://github.com/yourusername/weather-app"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website showcasing my skills and projects.",
+    "image": "assets/images/portfolio.jpg",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+    "demoUrl": "https://yourusername.github.io",
+    "repoUrl": "https://github.com/yourusername/yourusername.github.io"
+  }
+]
