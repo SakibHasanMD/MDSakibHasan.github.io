@@ -279,10 +279,89 @@ footer {
     font-size: 1.2rem;
 }
 
+
+/*Contact Form*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.form-group {
+    flex: 1;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #555;
+}
+
+textarea {
+    height: 300px;
+    resize: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 200px;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     header {
         justify-content: center;
+    }
+
+    .input-row {
+        flex-direction: column;
     }
 
     .education-container {

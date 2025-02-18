@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio - Projects</title>
   <link rel="stylesheet" href="css/dark-theme.css">
 </head>
+
 <body>
   <header>
     <nav>
       <a href="index.html">About</a>
-      <a href="academics.html" >Academics</a>
+      <a href="academics.html">Academics</a>
       <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html" >Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
+
   <main>
     <h1>My Projects</h1>
     <div id="projects-container" class="projects-grid">
       <!-- Projects will be loaded dynamically -->
     </div>
   </main>
-  
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+
+
 
   <script>
     // Load projects from JSON file
@@ -37,7 +37,7 @@
         displayProjects(projects);
       } catch (error) {
         console.error('Error loading projects:', error);
-        document.getElementById('projects-container').innerHTML = 
+        document.getElementById('projects-container').innerHTML =
           '<p class="error">Unable to load projects. Please try again later.</p>';
       }
     }
@@ -45,12 +45,12 @@
     // Display projects on the page
     function displayProjects(projects) {
       const container = document.getElementById('projects-container');
-      
+
       if (projects.length === 0) {
         container.innerHTML = '<p>No projects to display at this time.</p>';
         return;
       }
-      
+
       projects.forEach(project => {
         const projectCard = document.createElement('div');
         projectCard.classList.add('project-card');
@@ -74,4 +74,5 @@
     document.addEventListener('DOMContentLoaded', loadProjects);
   </script>
 </body>
+
 </html>
