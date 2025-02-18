@@ -373,8 +373,14 @@ button[type="submit"]:hover {
 }
 
 .filter-btn.active {
-    color: #ff0000;
+    border-radius: 5px;
+    color: white;
     font-weight: bold;
+    background: #ff0000;
+}
+
+.filter-btn.active:hover {
+    color: gray;
 }
 
 .filter-btn:hover {
