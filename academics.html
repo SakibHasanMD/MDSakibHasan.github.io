@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="academics.html" class="active">Academics</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="academics-section">
+    <h1>Academics</h1>
+
+    <div class="education-container">
+      <div class="higher-education">
+        <h2>Higher Education</h2>
+        <p><strong>BSc in Computer Science and Engineering</strong></p>
+        <p id="university-name"></p>
+        <p id="graduation-year"></p>
+        <p id="cgpa"></p>
+      </div>
+
+      <div class="education-details">
+        <div class="college">
+          <h2>College</h2>
+          <p id="college-name"></p>
+          <p id="college-board"></p>
+          <p id="college-year"></p>
+          <p id="college-performance"></p>
+        </div>
+        <div class="school">
+          <h2>School</h2>
+          <p id="school-name"></p>
+          <p id="school-board"></p>
+          <p id="school-year"></p>
+          <p id="school-performance"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="core-courses">
+      <h2>Core Technical Coursework</h2>
+      <ul id="courses-list"></ul>
+    </div>
+  </section>
+
+  <script>
+    async function loadAcademics() {
+      try {
+        const response = await fetch('assets/data/academics.json');
+        if (!response.ok) throw new Error('Failed to load academics data');
+        const data = await response.json();
+
+        document.getElementById('university-name').textContent = data.education.higher_education.university;
+        document.getElementById('graduation-year').textContent = `Graduation: ${data.education.higher_education.graduation_year}`;
+        document.getElementById('cgpa').textContent = `CGPA: ${data.education.higher_education.cgpa}`;
+
+        document.getElementById('college-name').textContent = data.education.college.name;
+        document.getElementById('college-board').textContent = data.education.college.board;
+        document.getElementById('college-year').textContent = `Graduation Year: ${data.education.college.graduation_year}`;
+        document.getElementById('college-performance').textContent = `Performance: ${data.education.college.performance}`;
+
+        document.getElementById('school-name').textContent = data.education.school.name;
+        document.getElementById('school-board').textContent = data.education.school.board;
+        document.getElementById('school-year').textContent = `Graduation Year: ${data.education.school.graduation_year}`;
+        document.getElementById('school-performance').textContent = `Performance: ${data.education.school.performance}`;
+
+        const coursesList = document.getElementById('courses-list');
+        data.core_courses.forEach(course => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${course.serial}. ${course.course_name}</strong><ul>${course.learned_things.map(item => `<li>${item}</li>`).join('')}</ul>`;
+          coursesList.appendChild(li);
+        });
+      } catch (error) {
+        console.error('Error loading academics:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadAcademics);
+  </script>
+
+  <!-- <footer>
+    <p>&copy; 2025 Your Name</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </footer> -->
+</body>
+
+</html>

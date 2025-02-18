@@ -1,0 +1,43 @@
+{
+    "education": {
+        "college": {
+            "name": "Your College Name",
+            "board": "Board of Education",
+            "graduation_year": "YYYY",
+            "performance": "XX%"
+        },
+        "school": {
+            "name": "Your School Name",
+            "board": "Board of Education",
+            "graduation_year": "YYYY",
+            "performance": "XX%"
+        }
+    },
+    "core_courses": [
+        {
+            "serial": 1,
+            "course_name": "Data Structures and Algorithms",
+            "learned_things": [
+                "Comprehensive study of algorithmic paradigms",
+                "Proficiency in implementing complex data structures",
+                "Enhanced problem-solving capabilities"
+            ]
+        },
+        {
+            "serial": 2,
+            "course_name": "Object-Oriented Programming",
+            "learned_things": [
+                "Advanced concepts in C++ and Java",
+                "Design patterns and software engineering principles"
+            ]
+        },
+        {
+            "serial": 3,
+            "course_name": "Mobile Application Development",
+            "learned_things": [
+                "Specialized training in Flutter and Dart",
+                "Practical project-based learning"
+            ]
+        }
+    ]
+}
