@@ -1,16 +1,16 @@
 {
     "education": {
         "college": {
-            "name": "Your College Name",
-            "board": "Board of Education",
-            "graduation_year": "YYYY",
-            "performance": "XX%"
+            "name": "Naogaon Govt College",
+            "board": "Rajshahi Board",
+            "graduation_year": "2019",
+            "performance": "4.98"
         },
         "school": {
-            "name": "Your School Name",
-            "board": "Board of Education",
-            "graduation_year": "YYYY",
-            "performance": "XX%"
+            "name": "Naogaon KD Govt School",
+            "board": "Rajshahi Board",
+            "graduation_year": "2017",
+            "performance": "5.00"
         }
     },
     "core_courses": [
