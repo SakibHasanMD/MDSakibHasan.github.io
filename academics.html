@@ -20,7 +20,7 @@
   <section class="academics-section">
     <div class="container">
       <h1>Academics</h1>
-      
+
       <div class="education-container">
         <div class="higher-education">
           <h2>Higher Education</h2>
@@ -30,8 +30,14 @@
             <li>Graduation: [Month Year]</li>
             <li>CGPA: X.XX/10.0</li>
           </ul>
+          <div class="coursework-container">
+            <h2>Core Technical Coursework</h2>
+            <div id="courses-list">
+              <!-- Courses will be loaded here -->
+            </div>
+          </div>
         </div>
-        
+
         <div class="college-school-container">
           <div class="college-education">
             <h2>College</h2>
@@ -39,7 +45,7 @@
               <!-- College information will be loaded here -->
             </div>
           </div>
-          
+
           <div class="school-education">
             <h2>School</h2>
             <div id="school-info">
@@ -48,13 +54,8 @@
           </div>
         </div>
       </div>
-      
-      <div class="coursework-container">
-        <h2>Core Technical Coursework</h2>
-        <div id="courses-list">
-          <!-- Courses will be loaded here -->
-        </div>
-      </div>
+
+
     </div>
   </section>
 
@@ -64,7 +65,7 @@
         const response = await fetch('assets/data/academics.json');
         if (!response.ok) throw new Error('Failed to load academics data');
         const data = await response.json();
-        
+
         // Populate college information
         const collegeInfo = document.getElementById('college-info');
         collegeInfo.innerHTML = `
@@ -75,7 +76,7 @@
             <li>Academic Performance: ${data.education.college.performance}</li>
           </ul>
         `;
-        
+
         // Populate school information
         const schoolInfo = document.getElementById('school-info');
         schoolInfo.innerHTML = `
@@ -86,14 +87,14 @@
             <li>Academic Performance: ${data.education.school.performance}</li>
           </ul>
         `;
-        
+
         // Populate courses
         const coursesList = document.getElementById('courses-list');
         let coursesHTML = '<ol>';
-        
+
         data.core_courses.forEach(course => {
           let learnedThingsHTML = '';
-          
+
           if (course.learned_things && course.learned_things.length > 0) {
             learnedThingsHTML = '<ul>';
             course.learned_things.forEach(thing => {
@@ -101,7 +102,7 @@
             });
             learnedThingsHTML += '</ul>';
           }
-          
+
           coursesHTML += `
             <li>
               <h3>${course.course_name}</h3>
@@ -109,17 +110,17 @@
             </li>
           `;
         });
-        
+
         coursesHTML += '</ol>';
         coursesList.innerHTML = coursesHTML;
-        
+
       } catch (error) {
         console.error('Error loading academics:', error);
-        document.querySelector('.academics-section').innerHTML = 
+        document.querySelector('.academics-section').innerHTML =
           '<p class="error">Unable to load academic information. Please try again later.</p>';
       }
     }
-    
+
     // Call the function when the page loads
     document.addEventListener('DOMContentLoaded', loadAcademics);
   </script>
