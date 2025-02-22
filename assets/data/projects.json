@@ -2,133 +2,27 @@
   "projects": [
     {
       "id": "1",
-      "name": "E-Commerce Mobile App",
-      "category": "Flutter",
-      "shortDescription": "A feature-rich mobile app for online shopping with secure payment integration and real-time inventory tracking.",
-      "thumbnailUrl": "assets/images/projects/ecommerce-app.jpg",
-      "fullDescription": "This Flutter-based e-commerce application provides users with a seamless shopping experience across both iOS and Android platforms. Key features include user authentication, product categorization, wishlist functionality, cart management, secure payment processing via Stripe, and order tracking. The app utilizes Firebase for backend operations, ensuring real-time data synchronization and reliable performance.",
-      "technologies": [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Stripe API",
-        "GetX"
-      ],
-      "images": [
-        "assets/images/projects/ecommerce-app-1.jpg",
-        "assets/images/projects/ecommerce-app-2.jpg",
-        "assets/images/projects/ecommerce-app-3.jpg"
-      ],
-      "linkToCode": "https://github.com/yourusername/ecommerce-app",
-      "liveDemoLink": "https://play.google.com/store/apps/details?id=com.yourusername.ecommerceapp"
-    },
-    {
-      "id": "2",
-      "name": "Portfolio Website",
+      "name": "School Portal Management",
       "category": "Web Development",
-      "shortDescription": "A responsive portfolio website built with modern web technologies to showcase professional work and skills.",
-      "thumbnailUrl": "assets/images/projects/portfolio-website.jpg",
-      "fullDescription": "This portfolio website was designed and developed from scratch using HTML5, CSS3, and JavaScript. It features a responsive design that adapts seamlessly to various screen sizes, from mobile devices to desktops. The website includes sections for about me, projects, skills, and contact information. It also incorporates smooth scrolling animations, a dark/light theme toggle, and a contact form with validation.",
+      "shortDescription": "A School Management System for administrators, teachers, and students.",
+      "thumbnailUrl": "assets/images/projects/school-portal.png",
+      "fullDescription": "This web-based school portal management system was developed as part of a group project of Web Technologies Course. I was responsible for implementing the principal's dashboard and features. The Project includes functionality such as student and teacher management, staff management, announcements, fund management, and communication. The dashboard provides key insights, including student performance tracking and employee overviews.",
       "technologies": [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript",
-        "GSAP",
-        "FormSubmit"
+        "PHP",
+        "MySQL",
+        "Bootstrap"
       ],
       "images": [
-        "assets/images/projects/portfolio-website-1.jpg",
-        "assets/images/projects/portfolio-website-2.jpg"
+        "assets/images/projects/school-portal-1.png",
+        "assets/images/projects/school-portal-2.png",
+        "assets/images/projects/school-portal-3.png"
       ],
-      "linkToCode": "https://github.com/yourusername/portfolio",
-      "liveDemoLink": "https://yourusername.github.io/portfolio"
-    },
-    {
-      "id": "3",
-      "name": "Task Management Application",
-      "category": "Web Development",
-      "shortDescription": "A full-stack web application for managing tasks and projects with team collaboration features.",
-      "thumbnailUrl": "assets/images/projects/task-manager.jpg",
-      "fullDescription": "This task management application helps teams organize and track their projects efficiently. Built with a React frontend and Node.js backend, it offers features such as user authentication, project creation, task assignment, due date tracking, progress monitoring, and file attachments. The application uses MongoDB to store data and Socket.io for real-time updates, ensuring all team members stay synchronized.",
-      "technologies": [
-        "React",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Socket.io",
-        "JWT"
-      ],
-      "images": [
-        "assets/images/projects/task-manager-1.jpg",
-        "assets/images/projects/task-manager-2.jpg",
-        "assets/images/projects/task-manager-3.jpg"
-      ],
-      "linkToCode": "https://github.com/yourusername/task-manager",
-      "liveDemoLink": "https://task-manager-demo.herokuapp.com"
-    },
-    {
-      "id": "4",
-      "name": "Food Delivery UI Design",
-      "category": "UI/UX",
-      "shortDescription": "A comprehensive UI/UX design for a food delivery mobile application focusing on user experience and accessibility.",
-      "thumbnailUrl": "assets/images/projects/food-delivery-ui.jpg",
-      "fullDescription": "This UI/UX design project focuses on creating an intuitive and visually appealing interface for a food delivery application. The design process involved extensive user research, persona creation, wireframing, and prototyping. Special attention was given to accessibility features, ensuring the app is usable by people with different abilities. The final deliverables included high-fidelity mockups, interactive prototypes, and a comprehensive design system for future development.",
-      "technologies": [
-        "Figma",
-        "Adobe XD",
-        "Sketch",
-        "Principle"
-      ],
-      "images": [
-        "assets/images/projects/food-delivery-ui-1.jpg",
-        "assets/images/projects/food-delivery-ui-2.jpg",
-        "assets/images/projects/food-delivery-ui-3.jpg"
-      ],
-      "linkToCode": null,
-      "liveDemoLink": "https://www.figma.com/proto/abcdefg/Food-Delivery-App"
-    },
-    {
-      "id": "5",
-      "name": "Weather Forecast App",
-      "category": "Flutter",
-      "shortDescription": "A cross-platform mobile application that provides accurate weather forecasts with interactive visualizations.",
-      "thumbnailUrl": "assets/images/projects/weather-app.jpg",
-      "fullDescription": "This Flutter-based weather application provides users with current weather conditions and 7-day forecasts for any location worldwide. The app incorporates the OpenWeatherMap API for accurate weather data and uses custom animations to create an engaging user experience. Features include location-based weather detection, city search, favorite locations saving, hourly forecasts, and severe weather alerts. The app also offers various themes based on the current weather conditions.",
-      "technologies": [
-        "Flutter",
-        "Dart",
-        "OpenWeatherMap API",
-        "Geolocator",
-        "Hive"
-      ],
-      "images": [
-        "assets/images/projects/weather-app-1.jpg",
-        "assets/images/projects/weather-app-2.jpg"
-      ],
-      "linkToCode": "https://github.com/yourusername/weather-app",
-      "liveDemoLink": "https://play.google.com/store/apps/details?id=com.yourusername.weatherapp"
-    },
-    {
-      "id": "6",
-      "name": "Blockchain Voting System",
-      "category": "Others",
-      "shortDescription": "A secure and transparent voting system using blockchain technology to ensure integrity and prevent fraud.",
-      "thumbnailUrl": "assets/images/projects/blockchain-voting.jpg",
-      "fullDescription": "This blockchain-based voting system was developed to address security and transparency concerns in traditional voting processes. Built using Ethereum smart contracts, the system allows for immutable vote recording while maintaining voter privacy. The project features voter registration and verification, secure ballot creation, real-time vote counting, and comprehensive audit trails. The system was tested in a university student body election, demonstrating significant improvements in voter turnout and trust.",
-      "technologies": [
-        "Solidity",
-        "Ethereum",
-        "Web3.js",
-        "React",
-        "Node.js",
-        "MetaMask"
-      ],
-      "images": [
-        "assets/images/projects/blockchain-voting-1.jpg",
-        "assets/images/projects/blockchain-voting-2.jpg"
-      ],
-      "linkToCode": "https://github.com/yourusername/blockchain-voting",
-      "liveDemoLink": "https://blockchain-voting-demo.netlify.app"
+      "linkToCode": "https://github.com/SakibHasanMD/school-portal-management",
+      "liveDemoLink": "#"
     }
+    
   ]
 }
