@@ -6,7 +6,7 @@
       "category": "Web Development",
       "shortDescription": "A School Management System for administrators, teachers, and students.",
       "thumbnailUrl": "assets/images/projects/school-portal.png",
-      "fullDescription": "This web-based school portal management system was developed as part of a group project of Web Technologies Course. I was responsible for implementing the principal's dashboard and features. The Project includes functionality such as student and teacher management, staff management, announcements, fund management, and communication. The dashboard provides key insights, including student performance tracking and employee overviews.",
+      "fullDescription": "This web-based school portal management system was developed as part of a group project in the Web Technologies course. I was responsible for implementing the principal's dashboard and features. The project includes functionality such as student and teacher management, staff management, announcements, fund management, and communication. The dashboard provides key insights, including student performance tracking and employee overviews.\n\nKey features include:\n- Dashboard overview with student, teacher, and staff statistics\n- Fund management and balance tracking\n- Viewing and managing top-performing students\n- Employee overview with salary, subjects, and positions\n- Announcements management (adding and viewing)\n- Policies and rules management\n- Communication tools for staff coordination\n- Secure authentication and role-based access control",
       "technologies": [
         "HTML",
         "CSS",
@@ -22,7 +22,30 @@
       ],
       "linkToCode": "https://github.com/SakibHasanMD/school-portal-management",
       "liveDemoLink": "#"
+    },
+    {
+      "id": "2",
+      "name": "Job Portal BD",
+      "category": "Web Development",
+      "shortDescription": "A Basic Job Portal where employers and job seekers can search for Employers or Jobs.",
+      "thumbnailUrl": "assets/images/projects/job-portal.png",
+      "fullDescription": "Job Portal BD is a web-based platform for both employers and job seekers. It has basic functions and a minimal UI design. I developed this project using my foundational knowledge of HTML, CSS, PHP, and some JavaScript while learning Web Technologies in my university.\n\nKey features include:\n- User authentication for job seekers and employers using sessions\n- Profile management with resume upload functionality\n- Job application and save system\n- Employer dashboard to post new job listings\n- Database management using MySQL",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "MySQL",
+        "JavaScript"
+      ],
+      "images": [
+        "assets/images/projects/job-portal-1.png",
+        "assets/images/projects/job-portal-2.png",
+        "assets/images/projects/job-portal-3.png",
+        "assets/images/projects/job-portal-4.png",
+        "assets/images/projects/job-portal-5.png"
+      ],
+      "linkToCode": "https://github.com/SakibHasanMD/job-portal-bd",
+      "liveDemoLink": "#"
     }
-    
   ]
 }
