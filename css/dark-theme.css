@@ -452,6 +452,7 @@ button[type="submit"]:hover {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--text-color);
+    padding-top: 25px;
 }
 
 .project-metadata {
