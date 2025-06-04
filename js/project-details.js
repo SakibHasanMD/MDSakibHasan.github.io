@@ -86,27 +86,31 @@ function renderProjectDetails(project) {
 }
 
 function openFullscreen(img) {
-    const fullscreenDiv = document.createElement('div');
-    fullscreenDiv.classList.add('fullscreen-overlay');
-    fullscreenDiv.innerHTML = `
-        <div class="fullscreen-content">
-            <img src="${img.src}" alt="${img.alt}" />
-            <span class="close-btn">&times;</span>
-        </div>
-    `;
+  const fullscreenDiv = document.createElement('div');
+  fullscreenDiv.classList.add('fullscreen-overlay');
+  fullscreenDiv.innerHTML = `
+    <div class="fullscreen-content">
+      <img src="${img.src}" alt="${img.alt}" />
+      <span class="close-btn">&times;</span>
+    </div>
+  `;
 
-    document.body.appendChild(fullscreenDiv);
+  document.body.appendChild(fullscreenDiv);
+  document.body.style.overflow = 'hidden';
 
-    fullscreenDiv.querySelector('.close-btn').addEventListener('click', () => {
-        fullscreenDiv.remove();
-    });
+  fullscreenDiv.querySelector('.close-btn').addEventListener('click', () => {
+    fullscreenDiv.remove();
+    document.body.style.overflow = '';
+  });
 
-    fullscreenDiv.addEventListener('click', (e) => {
-        if (e.target === fullscreenDiv) {
-            fullscreenDiv.remove();
-        }
-    });
+  fullscreenDiv.addEventListener('click', (e) => {
+    if (e.target === fullscreenDiv) {
+      fullscreenDiv.remove();
+      document.body.style.overflow = '';
+    }
+  });
 }
+
 
 function showError(message) {
     const container = document.getElementById('project-details-container');
