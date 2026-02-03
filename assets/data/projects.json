@@ -73,6 +73,26 @@
       ],
       "linkToCode": "#",
       "liveDemoLink": "#"
+    },
+   {
+      "id": "4",
+      "name": "NeoMorph Calculator",
+      "category": "Flutter",
+      "shortDescription": "Created a basic calculator integrated with admob to publish in Play Store,",
+      "thumbnailUrl": "assets/images/projects/neo-cal-1.jpg",
+      "fullDescription": "This is a basic calculator app with a clean UI design. Integrated with admob and unity ads using admob ad mediation. The goal of creating this basic app was to learn ad intregration and to publish apps to playstore. It was sucessfully tested and uploaded to live playstore. But my console account got terminated for "High Risk Behavior".  \n\nKey features include:\n- Basic Calculator App\n- Clean Neomorphic UI Design\n- Intregrated Ads using admob mediation(admob and unity ads)\n- Published App to Play Store",
+      "technologies": [
+        "Play Console",
+	"Admob Mediation",
+        "Unity-Ads",
+        "Admob"
+      ],
+      "images": [
+        "assets/images/projects/neo-cal-1.jpg",
+        "assets/images/projects/neo-cal-2.jpg"
+      ],
+      "linkToCode": "https://github.com/SakibHasanMD/neomorph_calculator_public",
+      "liveDemoLink": "#"
     }
   ]
 }
