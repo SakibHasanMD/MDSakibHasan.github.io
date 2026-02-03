@@ -46,6 +46,33 @@
       ],
       "linkToCode": "https://github.com/SakibHasanMD/job-portal-bd",
       "liveDemoLink": "#"
+    },
+    {
+      "id": "3",
+      "name": "Believe - Student Shopping Center",
+      "category": "Flutter",
+      "shortDescription": "An E-commerce starter app which I built for my friend",
+      "thumbnailUrl": "assets/images/projects/Believe-1.png",
+      "fullDescription": "This Flutter-based eCommerce mobile application was developed as my first app project and was created for a friend. The app provides a simple and user-friendly shopping experience where users can browse products and place orders easily.\n\nThe application allows users to create accounts using google sign in option and can update their profiles, add their phone number and delivery address, and manage their orders. Users can add products to the cart, place orders, track order status, and make payments using bKash. The app is designed to be straightforward and easy to use, similar to other common eCommerce apps.\n\nKey features include:\n- Product browsing and item selection\n- User profile management (name, phone number, address)\n- Add to cart and order placement\n- Order tracking and order history\n- Simple and clean user interface\n- Secure user authentication using Firebase google sign in",
+      "technologies": [
+        "Flutter",
+        "JSON",
+        "Firebase",
+      ],
+      "images": [
+        "assets/images/projects/Believe-1.png",
+       	"assets/images/projects/Believe-2.png",
+      	"assets/images/projects/Believe-3.png",
+      	"assets/images/projects/Believe-4.png",
+      	"assets/images/projects/Believe-5.png",
+      	"assets/images/projects/Believe-6.png",
+      	"assets/images/projects/Believe-7.png",
+      	"assets/images/projects/Believe-8.png",
+      	"assets/images/projects/Believe-9.png",
+      	"assets/images/projects/Believe-10.png"
+      ],
+      "linkToCode": "#",
+      "liveDemoLink": "#"
     }
   ]
 }
