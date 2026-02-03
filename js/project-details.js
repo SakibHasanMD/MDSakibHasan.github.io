@@ -54,9 +54,10 @@ function renderProjectDetails(project) {
                 <h2>About this project</h2>
                 <p>${project.fullDescription}</p>
 
-                <div class="project-links">
-                    ${project.linkToCode ? `<a href="${project.linkToCode}" target="_blank">View Code</a>` : ''}
-                    ${project.liveDemoLink ? `<a href="${project.liveDemoLink}" target="_blank">Live Demo</a>` : ''}
+                <div class="project-links">${ project.linkToCode && project.linkToCode !== "#" ?
+                    `<a href="${project.linkToCode}" target="_blank">View Code</a>` 
+                    : `<span class="disabled-link" data-tooltip="Source code not public"> No Code Available </span>`  }
+                  
                 </div>
             </div>
         </div>

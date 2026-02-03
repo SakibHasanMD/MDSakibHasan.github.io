@@ -534,6 +534,33 @@ button[type="submit"]:hover {
     background-color: #cc0000;
 }
 
+.disabled-link {
+    position: relative;
+    cursor: not-allowed;
+    opacity: 0.7;
+    padding: 10px 16px;
+    background: #7b4c4c;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.disabled-link:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+
 .project-gallery {
     margin-top: 3rem;
 }
